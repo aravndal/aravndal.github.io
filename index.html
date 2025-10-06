@@ -20,18 +20,30 @@
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: left; /* Endret til venstrestilt for bedre lesbarhet i brødtekst */
         }
         h1 { 
             color: #2c3e50; 
             margin-bottom: 15px; 
+            text-align: center;
         }
         h2 { 
             color: #34495e; 
             margin-top: 30px; 
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
         }
         p {
-            font-size: 1.1em;
+            font-size: 1.0em;
             margin-bottom: 10px;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 5px;
         }
         .app-link {
             display: inline-block;
@@ -39,6 +51,7 @@
             color: white;
             padding: 10px 20px;
             margin-top: 20px;
+            margin-right: 10px; /* La til marg for bedre layout */
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
@@ -46,10 +59,14 @@
         .app-link:hover {
             background-color: #0056b3;
         }
+        .center-text {
+            text-align: center; /* Hjelpeklasse for å sentrere elementer som skal sentreres */
+        }
         .footer {
             margin-top: 50px;
             font-size: 0.9em;
             color: #777;
+            text-align: center;
         }
         .adstxt-link {
             margin-top: 20px;
@@ -67,20 +84,48 @@
 <body>
     <div class="container">
         <h1>Welcome to Ravndal Studio</h1>
-        <p>Innovating with simplicity and precision.</p>
+        <p class="center-text">Innovating with simplicity and precision.</p>
 
         <h2>About Checklists Pro+</h2>
-        <p>Checklists Pro+ is designed to help you organize your tasks and daily routines with unparalleled **ease.**</p> 
-        <p>Whether for personal productivity, professional projects, or daily errands, Checklists Pro+ provides a clean, intuitive, and efficient way to manage everything.</p>
-        <p>Developed to enhance your focus and streamline your workflow, making every day a step towards greater accomplishment.</p>
         
-        <a href="DIN_APPLENKE_IOS" class="app-link" target="_blank">Download Checklists Pro+ on the App Store</a>
-        <br>
-        <a href="DIN_APPLENKE_ANDROID" class="app-link" target="_blank">Download Checklists Pro+ on Google Play</a>
+        <p><strong>Tired of simple to-do lists?</strong> Checklists Pro+ is for those who need to remember <strong>how</strong> a task is done, not just that it exists.</p>
+        <p>It lets you create **reusable checklists** for places, routines, and situations you return to frequently:</p>
 
-        <div class="adstxt-link">
-            <p>Our <code>app-ads.txt</code> file for authorized ad delivery is available here: <a href="app-ads.txt">View app-ads.txt file</a></p>
-        </div>
+        <ul>
+            <li>Cabin opening or closing, Boat launch or winter prep.</li>
+            <li>Travel departure or return, Vehicle maintenance.</li>
+            <li>Worksite tasks, Weekly or monthly routines.</li>
+        </ul>
+
+        <h3>Intelligent Workflow</h3>
+        <p>Link a checklist to a GPS location or address. **When you arrive, it is ready.** No searching. No rebuilding old lists.</p>
+        <p>Every list is reusable. You do not lose it when you complete it. Just reset and use again.</p>
+
+        <h3>Why Checklists Pro+ Helps</h3>
+        <ul>
+            <li>Prevent mistakes in tasks you do infrequently.</li>
+            <li>Reduce mental load and build consistency across people.</li>
+            <li>Make handoffs easy and stop rebuilding the same list from memory.</li>
+        </ul>
+
+        <h3>Key Features</h3>
+        <ul>
+            <li>Location triggered visibility (optional) with radius control for nearby detection.</li>
+            <li>Manual or automatic reset.</li>
+            <li>Clear step-by-step layout and option to share lists with others.</li>
+            <li>Works offline after setup.</li>
+            <li>Privacy friendly (only what you enter) and designed for calm reliability.</li>
+        </ul>
+        
+        <p style="margin-top: 25px;">**WHEN IT APPEARS:** Arrive at the cabin. The cabin checklist is there. Hook up the trailer. The towing checklist is there. Park at the marina. The launch checklist is there.</p>
+        
+        <h3 style="text-align: center; margin-top: 40px;">Stop asking: "What was I supposed to do here again?"</h3>
+        <p class="center-text">Start trusting your process.</p>
+
+        <div class="center-text">
+            <a href="https://apps.apple.com/no/app/huskelister-pro/id6751971775" class="app-link" target="_blank">Download Checklists Pro+ on the App Store</a>
+            </div>
+
     </div>
 
     <div class="footer">
